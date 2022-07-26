@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: " header" " main" " footer";
+    grid-template-rows: 200px auto 45px;
+    grid-template-columns: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./recursos/36779.jpg);
+    font-family: "PT Sans Narrow", sans-serif;
+    background-image: linear-gradient(black, rgb(199, 11, 11));
+}
+
+main {
+    grid-area: main;
+    background-image: url(./recursos/carniceria1.jpg);
+    background-size: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2 0rem;
+    background-image: url(./recursos/36779.jpg);
+    font-family: "PT Sans Narrow", sans-serif;
+    background-image: linear-gradient(to bottom, black, red);
+}
+
+.main__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 380px;
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.header__img {
+    width: 50%;
+    height: 90%;
+}
+
+.menu {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menu__link {
+  font-size: 4rem;
+  padding: 3rem;
+  transition: all 1s;
+
+ 
+
+
+.menu__titulo {
+  font-size: 2rem;
+  padding: 2rem;
+  transition: all 1s;
+
+  &:hover {
+    border-color: var(--text-base);
+  }
+}
+
+.box {
+  background-color: #24242465;
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: white;
+}
+
+/*Fin del header*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-image: url(./recursos/carniceria1.jpg);
+  background-size: cover;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+
+.box__img {
+  max-width: 700px;
+  width: 100%;
+}
+
+/*galeria main*/
+
+.fondo {
+  grid-area: main;
+  background-image: url(./recursos/fondo.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 380px;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.footer__texto {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.menu__link, .footer__texto {
+  transition: 2s;
+
+ 
+}
+
+.header__logo:hover {
+  animation: movimiento 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.container-fluid {
+  padding: 0;
+  align-items: center;
+}
+
+.formulario__poiscion {
+  margin-top: 20rem;
+}
+
+.descripcion {
+  font-size: 10rem;
+  color: #ffffff;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.form-register {
+  width: 400px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+
+
+}
+
+.controls {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid a000007e;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
+}
+
+.form-register {
+  p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover 
+      color: white;
+      text-decoration: underline;
+    
+  
+
+  .botons {
+    width: 100%;
+    background: #a000007e;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+
+
+@keyframes movimiento {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  90% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu__link {
+    font-size: 3rem;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .menu {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .menu__link {
+    font-size: 3rem;
+    height: 25px;
+  }
+}
